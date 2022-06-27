@@ -5,13 +5,32 @@ print("Welcome to my first Python quiz game")
 
 playing =input("Do you want to play?(enter yes/no) ")
 
-if playing !="yes":
+if playing.lower() !="yes":
     quit()
 
 print("Greate! let's start the quiz :)")
+#print("Please enter with lowercase")
 
 answer = input("What does CPU stands for? ")
-if answer == "central proccessing unit":
+if answer.lower()  == "central proccessing unit":
+    print("Correct! :)")
+else:
+    print("Incorrect! :(")
+
+answer = input("What does WWW stands for? ")
+if answer.lower()  == "world wide web":
+    print("Correct! :)")
+else:
+    print("Incorrect! :(")
+
+answer = input("What does HTML stands for? ")
+if answer.lower()  == "hypertext markup language":
+    print("Correct! :)")
+else:
+    print("Incorrect! :(")
+
+answer = input("What does CSS stands for? ")
+if answer.lower()  == "cascading style sheets":
     print("Correct! :)")
 else:
     print("Incorrect! :(")
