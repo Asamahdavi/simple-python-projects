@@ -35,13 +35,14 @@ while True:
     if userGuess == ran:
         print("yeey you got it !!!")
         break
+    elif userGuess > ran:
+        print("You were above the number !")
     else:
-        print("you got it wrong!")
+        print("You were below the number !")
+    
+       
 
-        if userGuess > ran:
-            print("You were above the number !")
-        else:
-            print("You were below the number !")
+        
 
 #here with , it is smart enough to undrestand the int and string and it will convert it itself
 print("You got it in",guesses,"guesses")
